@@ -22,6 +22,7 @@ RUN npm install --production --registry=https://registry.npm.taobao.org
 RUN npm run build
 # 拷贝所有源代码到工作目录
 COPY ./build /home/service
+COPY ./node_modules /home/service
 COPY ./routes /home/service
 COPY ./server.js /home/service
 

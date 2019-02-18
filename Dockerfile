@@ -19,7 +19,7 @@ COPY package.json /home/service
 # 安装安装npm模块项目依赖包
 # RUN npm install --production --registry=https://registry.npm.taobao.org
 RUN npm install --production --registry=https://registry.npm.taobao.org
-RUN npm run build
+
 # 拷贝所有源代码到工作目录
 COPY ./build /home/service
 COPY ./node_modules /home/service

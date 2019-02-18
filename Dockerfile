@@ -24,7 +24,6 @@ RUN pwd
 RUN ls
 # 拷贝所有源代码到工作目录
 COPY ./build /home/service
-COPY ./node_modules /home/service
 COPY ./routes /home/service
 COPY ./server.js /home/service
 
